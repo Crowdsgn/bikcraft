@@ -21,6 +21,10 @@
   padding: 0px;
 }
 
+.item-list {
+  padding: 16px 0px;
+}
+
 .menu-list li {
   position: relative;
 }

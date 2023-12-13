@@ -1,0 +1,367 @@
+.grid-depoimento {
+  background: #ffbb00;
+}
+
+.depoimento-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  padding: 120px 32px 85px 32px;
+  gap: 44px;
+}
+
+.depoimento-frase {
+  grid-column: 2;
+  position: relative;
+}
+
+.foto-depoimento {
+  max-width: 137%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  grid-column: 1 / 1;
+  right: 0px;
+}
+
+.depoimento {
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.deco-depoimento-top {
+  position: absolute;
+  top: -5px;
+  left: -32px;
+}
+
+.deco-depoimento-bottom {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+}
+
+.nome-depoimento {
+  margin-top: 12px;
+}
+
+.deco-depoimento1 {
+  grid-column: 2;
+  grid-row: 1;
+  position: absolute;
+  top: -100px;
+  left: -20px;
+}
+
+.deco-depoimento2 {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: end;
+  position: absolute;
+  top: 600px;
+}
+
+@media (max-width: 1200px) {
+  .depoimento-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 120px 32px 159px 32px;
+    gap: 44px;
+  }
+
+  .nome-depoimento {
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento {
+    font-family: "Merriweather", serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+
+  .deco-depoimento-bottom {
+    position: absolute;
+    bottom: 60px;
+    left: 290px;
+  }
+
+  .deco-depoimento2 {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+    position: absolute;
+    top: 500px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .depoimento-info {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 120px 32px 145px 32px;
+    gap: 44px;
+  }
+
+  .nome-depoimento {
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento {
+    font-family: "Merriweather", serif;
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+
+  .deco-depoimento-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 420px;
+  }
+
+  .deco-depoimento2 {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+    position: absolute;
+    top: 430px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento-info {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 120px 32px 83px 32px;
+    gap: 44px;
+  }
+
+  .nome-depoimento {
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento {
+    font-size: 1.4rem;
+  }
+  .deco-depoimento-top {
+    width: 30px;
+  }
+  .deco-depoimento-bottom {
+    bottom: 40px;
+    left: 310px;
+    width: 30px;
+  }
+  .deco-depoimento1 {
+    width: 32px;
+  }
+
+  .deco-depoimento2 {
+    width: 32px;
+    top: 320px;
+    right: 20px;
+  }
+
+  .nome-depoimento {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .depoimento-info {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 0px;
+    gap: 44px;
+  }
+
+  .foto-depoimento {
+    position: relative;
+    max-width: 110%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .depoimento-frase {
+    align-self: center;
+    margin-left: 24px;
+  }
+
+  .nome-depoimento {
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento {
+    font-size: 1.4rem;
+    width: 20ch;
+  }
+  .deco-depoimento-top {
+    width: 28px;
+    left: -24px;
+  }
+  .deco-depoimento-bottom {
+    bottom: 35px;
+    left: 50px;
+    width: 28px;
+  }
+  .deco-depoimento1 {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .deco-depoimento2 {
+    width: 28px;
+    top: 250px;
+    right: 20px;
+  }
+
+  .nome-depoimento {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .depoimento-info {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 120px 0px;
+    gap: 44px;
+  }
+
+  .foto-depoimento {
+    position: absolute;
+    max-width: 130%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    top: 0px;
+    left: 0px;
+  }
+
+  .depoimento-frase {
+    align-self: center;
+    margin-left: 24px;
+    padding: 8px;
+  }
+
+  .nome-depoimento {
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento {
+    font-size: 1.1rem;
+    width: 23ch;
+  }
+  .deco-depoimento-top {
+    width: 15px;
+    left: -5px;
+    top: 5px;
+  }
+  .deco-depoimento-bottom {
+    bottom: 45px;
+    left: 254px;
+    width: 15px;
+  }
+  .deco-depoimento1 {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .deco-depoimento2 {
+    width: 28px;
+    top: 353px;
+    right: 20px;
+  }
+
+  .nome-depoimento {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .depoimento-info {
+    max-width: 490px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 72px 0px;
+    gap: 44px;
+  }
+
+  .foto-depoimento {
+    position: absolute;
+    max-width: 165%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    top: 0px;
+    left: -48px;
+  }
+
+  .depoimento-frase {
+    align-self: center;
+    margin-left: 24px;
+    padding: 8px;
+  }
+
+  .nome-depoimento {
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+
+  .depoimento {
+    font-size: 1.1rem;
+    width: 23ch;
+  }
+  .deco-depoimento-top {
+    width: 15px;
+    left: -5px;
+    top: 5px;
+  }
+  .deco-depoimento-bottom {
+    bottom: 45px;
+    left: 254px;
+    width: 15px;
+  }
+  .deco-depoimento1 {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .deco-depoimento2 {
+    width: 28px;
+    top: 260px;
+    left: 290px;
+  }
+
+  .nome-depoimento {
+    font-size: 1rem;
+  }
+}

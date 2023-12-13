@@ -1,0 +1,116 @@
+.intro-termos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  display: grid;
+  gap: 30px;
+}
+
+.grid-termos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  display: grid;
+}
+
+.grid-termos ul {
+  display: grid;
+  gap: 40px;
+}
+
+.grid-termos li {
+  display: grid;
+  gap: 8px;
+}
+
+.grid-termos p {
+  width: 80ch;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .intro-termos {
+    max-width: 1000px;
+  }
+
+  .grid-termos {
+    max-width: 1000px;
+  }
+
+  .grid-termos p {
+    width: 70ch;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro-termos {
+    max-width: 1000px;
+  }
+
+  .grid-termos {
+    max-width: 1000px;
+  }
+
+  .grid-termos p {
+    width: 70ch;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-termos {
+    max-width: 700px;
+    padding: 60px 40px;
+  }
+
+  .grid-termos {
+    max-width: 700px;
+    padding: 60px 40px;
+  }
+  .grid-termos h5 {
+    font-size: 1.4rem;
+  }
+  .grid-termos p {
+    width: 70ch;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-termos {
+    max-width: 600px;
+    padding: 40px 20px;
+  }
+
+  .grid-termos {
+    max-width: 600px;
+    padding: 40px 20px;
+  }
+  .grid-termos h5 {
+    font-size: 1.2rem;
+  }
+  .grid-termos p {
+    width: 52ch;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .intro-termos {
+    max-width: 490px;
+    padding: 36px 24px;
+  }
+
+  .grid-termos {
+    max-width: 490px;
+    padding: 36px 24px;
+  }
+  .grid-termos h5 {
+    font-size: 1rem;
+  }
+  .grid-termos p {
+    width: 52ch;
+    font-size: 0.95rem;
+  }
+}

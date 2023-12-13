@@ -1,0 +1,731 @@
+.bg-escolha {
+  background: #3d3d3d;
+}
+
+.intro-escolha {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.grid-escolha {
+  background: #a3a3a3;
+}
+
+.list-escolha {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 60px;
+  gap: 120px;
+}
+
+.escolha-bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-texto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 36px;
+}
+
+.deco-escolhas {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.nome-bicicleta {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.texto-bicicleta {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  width: 36ch;
+}
+
+.dados-info {
+  grid-row: 3;
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.dados-info li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-self: center;
+}
+
+.dados-info img {
+  width: 36px;
+}
+.foto-escolha {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top bottom;
+  display: block;
+  border-radius: 5px;
+}
+
+.botao-escolha {
+  grid-column: 3;
+  grid-row: 3;
+  align-self: end;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.botao-escolha:hover {
+  background: linear-gradient(#efae09, #c0882e);
+}
+
+.nebula-escolha {
+  position: relative;
+  z-index: 1;
+}
+
+.nebula-preco::before {
+  content: "R$ 2799";
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #b8b8b8;
+  padding: 8px;
+  width: 96px;
+  height: 32px;
+  background: #7a7a7a;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  left: 424px;
+  top: 16px;
+  z-index: 2;
+}
+
+.nebula-escolha::after {
+  content: "";
+  width: 70vw;
+  height: 440.78px;
+  background: #292929;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  position: absolute;
+  z-index: -1;
+  left: 317px;
+  top: -40px;
+}
+
+.nimbus-preco {
+  position: relative;
+}
+.nimbus-preco::after {
+  content: "R$ 2999";
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #b8b8b8;
+  padding: 8px;
+  width: 96px;
+  height: 32px;
+  background: #666666;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  left: 424px;
+  top: 16px;
+}
+
+.magic-preco {
+  position: relative;
+}
+.magic-preco::after {
+  content: "R$ 2699";
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #b8b8b8;
+  padding: 8px;
+  width: 96px;
+  height: 32px;
+  background: #525252;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  left: 424px;
+  top: 16px;
+}
+
+@media (max-width: 1200px) {
+  .intro-escolha {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .list-escolha {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    padding: 60px;
+    gap: 120px;
+  }
+
+  .dados-info img {
+    width: 36px;
+    justify-self: center;
+  }
+
+  .dados-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+
+  .dados-info li {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    height: fit-content;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .dados-info li h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .botao-escolha {
+    grid-column: 1/-1;
+    grid-row: 4;
+    place-self: start;
+    margin-top: 20px;
+  }
+
+  .nimbus-preco::after {
+    top: 8px;
+    left: 332px;
+  }
+  .nebula-escolha::after {
+    height: 372.41px;
+    top: -30px;
+  }
+  .nebula-preco::before {
+    top: 8px;
+    left: 332px;
+  }
+  .magic-preco::after {
+    top: 8px;
+    left: 332px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .intro-escolha {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .list-escolha {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    padding: 60px 40px;
+    gap: 120px;
+  }
+
+  .dados-info img {
+    width: 36px;
+    justify-self: center;
+  }
+
+  .dados-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+
+  .dados-info li {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    height: fit-content;
+    justify-items: center;
+  }
+
+  .dados-info li h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .botao-escolha {
+    grid-column: 1/-1;
+    grid-row: 4;
+    place-self: start;
+    margin-top: 20px;
+  }
+  .foto-escolha {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .grid-texto {
+    padding: 0px 28px;
+  }
+
+  .nimbus-preco::after {
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 12px;
+    width: 96px;
+    height: 20px;
+    left: 240px;
+    top: 8px;
+    z-index: 2;
+  }
+
+  .magic-preco::after {
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 12px;
+    width: 96px;
+    height: 20px;
+    left: 240px;
+    top: 8px;
+    z-index: 2;
+  }
+
+  .nebula-preco::before {
+    content: "R$ 2799";
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 12px;
+    width: 96px;
+    height: 20px;
+    left: 240px;
+    top: 8px;
+    z-index: 2;
+  }
+
+  .nebula-escolha::after {
+    content: "";
+    width: 70vw;
+    height: 360px;
+    background: #292929;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    z-index: -1;
+    left: 317px;
+    top: -30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-escolha {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .list-escolha {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    padding: 60px 40px;
+    gap: 88px;
+  }
+
+  .deco-escolhas {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    transform: rotate(-180deg);
+  }
+
+  .escolha-bicicleta {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-texto {
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding: 0px;
+    margin-top: 28px;
+    grid-template-columns: 1fr;
+  }
+
+  .dados-info img {
+    width: 32px;
+    justify-self: center;
+  }
+
+  .dados-info {
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 3;
+    background: #292929;
+    padding: 16px;
+    border-radius: 5px;
+    justify-content: space-around;
+  }
+
+  .dados-info li {
+    display: flex;
+    gap: 16px;
+    height: fit-content;
+  }
+
+  .dados-info li h4 {
+    font-size: 1.2rem;
+    text-align: right;
+    color: #b8b8b8;
+  }
+
+  .texto-bicicleta {
+    width: auto;
+    font-size: 1.125rem;
+  }
+
+  .botao-escolha {
+    grid-column: 1/-1;
+    grid-row: 4;
+    margin-top: 20px;
+    place-self: end;
+  }
+  .foto-escolha {
+    max-width: 100%;
+    grid-column: 1/-1;
+  }
+
+  .nimbus-preco::after {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 100px;
+    height: 28px;
+    left: 475.98px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .magic-preco::after {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 100px;
+    height: 28px;
+    left: 475.98px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .nebula-preco::before {
+    content: "R$ 2799";
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 100px;
+    height: 28px;
+    left: 475.98px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .nebula-escolha::after {
+    content: "";
+    width: 100vw;
+    height: 766.27px;
+    background: #525252;
+    border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    z-index: -1;
+    left: -98px;
+    top: -30px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nebula-escolha h3 {
+    color: #f0f0f0;
+  }
+
+  .nebula-escolha p {
+    color: #b8b8b8;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-escolha {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .list-escolha {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .deco-escolhas {
+    width: 32px;
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    transform: rotate(-180deg);
+  }
+
+  .grid-texto {
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding: 0px;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .dados-info img {
+    width: 32px;
+    justify-self: center;
+  }
+
+  .dados-info {
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 3;
+    background: #292929;
+    padding: 16px;
+    border-radius: 5px;
+    justify-content: space-around;
+  }
+
+  .dados-info li {
+    display: flex;
+    gap: 12px;
+    height: fit-content;
+  }
+
+  .dados-info li h4 {
+    font-size: 1rem;
+    text-align: right;
+    color: #b8b8b8;
+  }
+
+  .foto-escolha {
+    max-width: 100%;
+    grid-column: 1/-1;
+  }
+
+  .nimbus-preco::after {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 80px;
+    height: 24px;
+    left: 396px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .magic-preco::after {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 80px;
+    height: 24px;
+    left: 396px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .nebula-preco::before {
+    content: "R$ 2799";
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 80px;
+    height: 24px;
+    left: 396px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .nebula-escolha::after {
+    content: "";
+    width: 100vw;
+    height: 676.67px;
+    background: #525252;
+    border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    z-index: -1;
+    left: -100px;
+    top: -30px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nebula-escolha h3 {
+    color: #f0f0f0;
+  }
+
+  .nebula-escolha p {
+    color: #b8b8b8;
+  }
+}
+
+@media (max-width: 590px) {
+  .intro-escolha {
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 36px 24px;
+  }
+
+  .list-escolha {
+    max-width: 490px;
+    margin: 0 auto;
+    display: grid;
+    padding: 36px 24px;
+    gap: 20px;
+  }
+
+  .deco-escolhas {
+    width: 28px;
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    transform: rotate(-180deg);
+  }
+
+  .grid-texto {
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding: 0px;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .dados-info img {
+    width: 28px;
+    justify-self: center;
+  }
+
+  .dados-info {
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 3;
+    background: #292929;
+    padding: 12px;
+    border-radius: 5px;
+    justify-content: space-around;
+  }
+
+  .dados-info li {
+    display: flex;
+    gap: 8px;
+    height: fit-content;
+  }
+
+  .dados-info li h4 {
+    font-size: 1rem;
+    text-align: right;
+    color: #b8b8b8;
+  }
+
+  .foto-escolha {
+    max-width: 100%;
+    grid-column: 1/-1;
+  }
+
+  .nimbus-preco::after {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 80px;
+    height: 24px;
+    left: 386px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .magic-preco::after {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 80px;
+    height: 24px;
+    left: 386px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .nebula-preco::before {
+    content: "R$ 2799";
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 12px;
+    width: 80px;
+    height: 24px;
+    left: 386px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .nebula-escolha::after {
+    content: "";
+    width: 100vw;
+    height: 614.69px;
+    background: #525252;
+    border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    z-index: -1;
+    left: -47px;
+    top: -10px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nebula-escolha h3 {
+    color: #f0f0f0;
+  }
+
+  .nebula-escolha p {
+    color: #b8b8b8;
+  }
+}

@@ -1,0 +1,630 @@
+.intro-orcamento {
+  padding: 60px 60px 0px 60px;
+}
+
+.bg-contato {
+  background: linear-gradient(
+    #3d3d3d 0%,
+    #3d3d3d 40%,
+    #999999 40%,
+    #999999 100%
+  );
+  padding: 60px;
+}
+
+.grid-form-contato {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bg-loja-contato {
+  padding: 60px;
+  background: #000000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.primeiro-info-contato {
+  display: grid;
+  height: auto;
+  gap: 40px;
+}
+
+.primeiro-info-contato h4 {
+  grid-column: 1/-1;
+}
+
+.lista-contatos-loja {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  height: fit-content;
+}
+
+.lista-contatos-loja p {
+  font-size: 1.1rem;
+}
+
+.lista-contatos-loja li {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 20px;
+  place-items: start;
+}
+
+.lista-contatos-loja li img {
+  width: 26px;
+}
+
+.redes-contato li img {
+  width: 40px;
+}
+
+.redes-contato {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  margin-top: 20px;
+}
+
+.primeiro-info-contato h4,
+.opcoes-itens h5,
+.segundo-formulario-contato h5 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  position: relative;
+  margin-left: 16px;
+}
+
+.primeiro-info-contato h4::before,
+.opcoes-itens h5::before,
+.segundo-formulario-contato h5::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  background: #e4a30b;
+  position: absolute;
+  left: -16px;
+  top: 15px;
+}
+
+.segundo-formulario-contato {
+  grid-column: 2;
+  display: grid;
+  padding: 60px;
+  background: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mensagem {
+  grid-column: 1/-1;
+  grid-row: 4;
+  display: grid;
+}
+
+.mensagem input {
+  height: 10ch;
+}
+
+.email-contato {
+  grid-column: 1/-1;
+  grid-row: 3;
+  display: grid;
+}
+
+.dados-pessoais-mensagem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.dados-pessoais-mensagem h5 {
+  grid-column: 1/-1;
+  margin-bottom: 10px;
+}
+
+.dados-entrega {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.dados-pessoais-mensagem .nome input,
+.telefone input,
+.email-contato input,
+.mensagem input {
+  font-size: 1.2rem;
+  padding: 12px;
+  background: #f0f0f0;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.dados-pessoais-mensagem h5 {
+  grid-column: 1/-1;
+  margin-bottom: 10px;
+}
+
+.botao-mensagem {
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  background: linear-gradient(#ffbb00, #cca026);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #332200;
+  cursor: pointer;
+  place-self: start;
+  margin-top: 20px;
+  grid-row: 6;
+}
+
+.botao-mensagem:hover {
+  background: linear-gradient(#efae09, #c0882e);
+}
+
+.botao-mensagem:active {
+  background: linear-gradient(#efae09, #c0882e);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.deco-mensagem {
+  place-self: end;
+}
+
+/*LOJAS LOCAIS*/
+
+.bg-lojas-locais {
+  background: #999999;
+}
+
+.grid-lojas-locais {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-lojas-locais h6 {
+  grid-column: 1/-1;
+}
+
+.loja-rj {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.loja-sp {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.foto-loja-local {
+  max-width: 100%;
+  display: block;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.bg-info-loja {
+  background: #ffffff;
+  padding: 30px;
+  height: fit-content;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.list-info-loja {
+  display: grid;
+  gap: 20px;
+}
+
+.list-info-loja li {
+  display: flex;
+  gap: 16px;
+  place-items: center;
+}
+
+.list-info-loja img {
+  place-self: center;
+  width: 40px;
+}
+
+.sub-info {
+  margin-left: 40px;
+  position: relative;
+}
+
+.deco-sub-info {
+  position: relative;
+}
+
+.deco-sub-info::before {
+  content: "";
+  width: 5px;
+  height: 100px;
+  background-color: #f0f0f0f0;
+  position: absolute;
+  left: -20px;
+  top: -60px;
+}
+
+@media (max-width: 1200px) {
+  .grid-form-contato {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bg-loja-contato,
+  .segundo-formulario-contato {
+    padding: 40px;
+  }
+
+  .primeiro-info-contato {
+    width: fit-content;
+  }
+
+  .lista-contatos-loja li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    place-items: start;
+  }
+
+  .lista-contatos-loja li img {
+    width: 25px;
+  }
+
+  .redes-contato li img {
+    width: 32px;
+  }
+
+  .grid-lojas-locais {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mensagem {
+    grid-row: 4;
+  }
+
+  .email-contato {
+    grid-row: 3;
+  }
+
+  .enviar-mensagem {
+    grid-row: 5;
+  }
+
+  .dados-pessoais-mensagem label {
+    display: grid;
+  }
+
+  .dados-pessoais-mensagem .nome input,
+  .telefone input,
+  .email-contato input,
+  .mensagem input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .botao-mensagem {
+    font-size: 1rem;
+  }
+
+  .sub-info img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid-form-contato {
+    max-width: 900px;
+  }
+
+  .primeiro-info-contato h4,
+  .opcoes-itens h5,
+  .segundo-formulario-contato h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    margin-left: 16px;
+  }
+
+  .primeiro-info-contato h4::before,
+  .opcoes-itens h5::before,
+  .segundo-formulario-contato h5::before {
+    width: 6px;
+    height: 8px;
+    left: -16px;
+    top: 9px;
+  }
+
+  .dados-pessoais-mensagem .nome input,
+  .telefone input,
+  .email-contato input,
+  .mensagem input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .dados-pessoais-mensagem input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .lista-contatos-loja p {
+    font-size: 1rem;
+  }
+
+  .deco-sub-info::before {
+    content: "";
+    width: 5px;
+    height: 80px;
+    background-color: #f0f0f0f0;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .bg-contato {
+    padding: 60px 40px;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .grid-form-contato {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bg-loja-contato {
+    grid-column: 1/-1;
+    grid-row: 1;
+    width: auto;
+  }
+
+  .primeiro-info-contato {
+    grid-column: 1/-1;
+    width: auto;
+  }
+  .segundo-formulario-contato {
+    grid-column: 1/-1;
+    grid-row: 2;
+    border-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .bg-loja-contato {
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .primeiro-info-contato h4,
+  .opcoes-itens h5,
+  .segundo-formulario-contato h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    margin-left: 16px;
+  }
+
+  .primeiro-info-contato h4::before,
+  .opcoes-itens h5::before,
+  .segundo-formulario-contato h5::before {
+    width: 6px;
+    height: 8px;
+    left: -16px;
+    top: 9px;
+  }
+
+  .dados-pessoais-mensagem .nome input,
+  .telefone input,
+  .email-contato input,
+  .mensagem input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .dados-pessoais-mensagem input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .lista-contatos-loja {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lista-contatos-loja p {
+    font-size: 1rem;
+  }
+
+  .deco-sub-info::before {
+    content: "";
+    width: 5px;
+    height: 80px;
+    background-color: #f0f0f0f0;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+  }
+
+  .redes-contato {
+    margin: 0px;
+  }
+
+  .deco-contato {
+    width: 32px;
+  }
+
+  .deco-mensagem {
+    width: 32px;
+  }
+
+  .grid-lojas-locais {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-lojas-locais h6 {
+    font-size: 2rem;
+  }
+
+  .loja-sp {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 500px;
+    justify-self: center;
+  }
+
+  .loja-rj {
+    max-width: 500px;
+    justify-self: center;
+  }
+  .list-info-loja img {
+    width: 29px;
+  }
+  .list-info-loja p {
+    font-size: 1.4rem;
+  }
+
+  .sub-info p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .bg-contato {
+    padding: 36px 24px;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .bg-loja-contato {
+    padding: 24px;
+  }
+
+  .grid-form-contato {
+    max-width: 490px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .segundo-formulario-contato {
+    padding: 24px;
+  }
+
+  .primeiro-info-contato h4,
+  .opcoes-itens h5,
+  .segundo-formulario-contato h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    margin-left: 16px;
+  }
+
+  .dados-pessoais-mensagem .nome input,
+  .telefone input,
+  .email-contato input,
+  .mensagem input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .dados-pessoais-mensagem input::placeholder {
+    font-size: 1rem;
+  }
+
+  .lista-contatos-loja {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lista-contatos-loja p {
+    font-size: 0.95rem;
+  }
+
+  .deco-sub-info::before {
+    content: "";
+    width: 5px;
+    height: 80px;
+    background-color: #f0f0f0f0;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+  }
+
+  .redes-contato {
+    margin: 0px;
+  }
+
+  .deco-contato {
+    width: 28px;
+  }
+
+  .deco-mensagem {
+    width: 28px;
+  }
+
+  .botao-mensagem {
+    font-size: 0.9rem;
+  }
+
+  .grid-lojas-locais {
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-lojas-locais h6 {
+    font-size: 2rem;
+  }
+
+  .loja-sp {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 500px;
+    justify-self: center;
+  }
+
+  .loja-rj {
+    max-width: 500px;
+    justify-self: center;
+  }
+  .list-info-loja img {
+    width: 29px;
+  }
+  .list-info-loja p {
+    font-size: 1.2rem;
+  }
+
+  .sub-info p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,457 @@
+.intro-seguros {
+  background: #3d3d3d;
+}
+
+.intro-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.grid-seguro-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.bg-seguros {
+  background: #3d3d3d;
+}
+
+.lista-seguros {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 160px;
+}
+
+.seguro-prata {
+  align-self: center;
+}
+
+.lista-seguros img {
+  width: 24px;
+}
+
+.grid-seguro-prata {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #292929;
+  padding: 24px 32px;
+  border-radius: 5px;
+}
+
+.lista-beneficios-prata {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin-top: 20px;
+}
+
+.lista-beneficios-prata li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.mensal {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
+}
+
+.preco {
+  text-align: right;
+  margin-left: 80px;
+}
+
+.botao-seguro-prata {
+  grid-row: 4;
+  grid-column: 2;
+  margin-top: 32px;
+  justify-self: end;
+  background: linear-gradient(#999999, #616161);
+  color: #141414;
+}
+
+.botao-seguro-prata:hover {
+  background: linear-gradient(#afafaf, #797979);
+}
+
+/*SEGURO OURO*/
+
+.grid-seguro-ouro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #999999;
+  padding: 24px 32px;
+  border-radius: 5px;
+}
+
+.lista-beneficios-ouro {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin-top: 20px;
+}
+
+.lista-beneficios-ouro li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.mensal {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
+}
+
+.preco {
+  text-align: right;
+  margin-left: 80px;
+}
+
+.botao-seguro-ouro {
+  grid-row: 4;
+  grid-column: 2;
+  margin-top: 32px;
+  justify-self: end;
+}
+
+.botao-seguro-ouro:hover {
+  background: linear-gradient(#efae09, #c0882e);
+}
+/*VANTAGENS*/
+
+.bg-vantagens {
+  background: #292929;
+}
+
+.grid-vantagens-seguro {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  display: grid;
+  gap: 60px;
+}
+
+.lista-vantagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+  place-content: center;
+}
+
+.vantagens-grid-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.vantagens-grid-item p {
+  width: 34ch;
+  font-size: 1.1rem;
+}
+
+/*PERGUNTAS FREQUENTES*/
+
+.bg-pg-freq {
+  background: #e0e0e0;
+}
+
+.grid-pg-freq {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+@media (max-width: 1200px) {
+  .grid-vantagens-seguro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    gap: 60px;
+  }
+  .grid-seguro-info {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .lista-vantagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px;
+    place-content: center;
+    place-items: center;
+  }
+
+  .vantagens-grid-item p {
+    width: 40ch;
+    font-size: 1.1rem;
+  }
+
+  .grid-pg-freq {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grid-vantagens-seguro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    gap: 60px;
+  }
+  .grid-seguro-info {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .lista-vantagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px;
+    place-content: center;
+    place-items: center;
+  }
+
+  .vantagens-grid-item p {
+    width: 40ch;
+    font-size: 1.1rem;
+  }
+
+  .grid-pg-freq {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-seguros {
+    padding: 60px 40px;
+  }
+
+  .intro-conteudo {
+    padding: 0px;
+  }
+
+  .grid-seguro-info {
+    max-width: 700px;
+    padding: 60px 40px;
+    margin: 0 auto;
+  }
+
+  .seguro-ouro {
+    grid-column: 1/-1;
+  }
+
+  .seguro-prata {
+    grid-column: 1/-1;
+  }
+
+  .lista-seguros {
+    gap: 60px;
+  }
+
+  .lista-seguros .seguro-prata .preco,
+  .seguro-ouro .preco {
+    font-size: 2rem;
+  }
+
+  .lista-beneficios-prata {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .lista-beneficios-prata li {
+    gap: 8px;
+  }
+  .grid-vantagens-seguro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    gap: 60px;
+  }
+
+  .lista-vantagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    place-content: center;
+    place-items: center;
+  }
+
+  .vantagens-grid-item p {
+    width: 28ch;
+    font-size: 1.1rem;
+  }
+
+  .grid-pg-freq {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-seguros {
+    padding: 40px 20px;
+  }
+
+  .intro-conteudo {
+    padding: 0px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .grid-seguro-info {
+    max-width: 600px;
+    padding: 60px 40px;
+    margin: 0 auto;
+  }
+
+  .seguro-ouro {
+    grid-column: 1/-1;
+  }
+
+  .seguro-prata {
+    grid-column: 1/-1;
+  }
+
+  .lista-seguros {
+    gap: 60px;
+  }
+
+  .lista-seguros .seguro-prata .preco,
+  .seguro-ouro .preco {
+    font-size: 2rem;
+  }
+
+  .lista-beneficios-prata {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .lista-beneficios-prata li {
+    gap: 8px;
+  }
+  .grid-vantagens-seguro {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    gap: 52px;
+  }
+
+  .lista-vantagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-content: center;
+    place-items: center;
+  }
+
+  .vantagens-grid-item p {
+    width: 24ch;
+    font-size: 1.1rem;
+  }
+
+  .grid-pg-freq {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 590px) {
+  .intro-seguros {
+    padding: 36px 24px;
+  }
+
+  .intro-conteudo {
+    padding: 0px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .grid-seguro-info {
+    max-width: 490px;
+    padding: 36px 24px;
+    margin: 0 auto;
+  }
+
+  .seguro-ouro {
+    grid-column: 1/-1;
+  }
+
+  .seguro-prata {
+    grid-column: 1/-1;
+  }
+
+  .lista-seguros {
+    gap: 40px;
+  }
+
+  .lista-seguros .seguro-prata .preco,
+  .seguro-ouro .preco {
+    font-size: 2rem;
+  }
+
+  .lista-beneficios-prata {
+    display: grid;
+    gap: 8px;
+    justify-content: start;
+  }
+
+  .lista-beneficios-ouro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lista-beneficios-prata li {
+    gap: 8px;
+  }
+  .grid-vantagens-seguro {
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 36px 24px;
+    display: grid;
+    gap: 52px;
+  }
+
+  .lista-vantagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-content: center;
+    place-items: center;
+  }
+
+  .vantagens-grid-item p {
+    width: 24ch;
+    font-size: 1rem;
+  }
+
+  .grid-pg-freq {
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 36px 24px;
+  }
+}

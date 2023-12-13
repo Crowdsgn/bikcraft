@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento</title>
+  <link rel="stylesheet" href="/home/global.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <header class="grid-menu">
+    <nav class="menu" aria-label="Primária">
+      <a href="/"><img src="/img/bikcraft.svg" alt="bikcraft logo"></a>
+      <ul class="menu-list">
+        <li> <a class="item-list c3 text1-xx-menu" href="/bicicletas/index.html">BICICLETAS</a></li>
+        <li><a class="item-list c3 text1-xx-menu" href="/seguros/">SEGUROS</a></li>
+        <li><a class="item-list c3 text1-xx-menu" href="/contatos/">CONTATO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg-escolha">
+    <div class="intro-escolha intro-orcamento">
+      <h2 class="text1-s c6">COTAÇÕES NO SEU E-MAIL</h2>
+      <h1 class="text1-xxl c1">solicite um orçamento<span class="p1">.</span></h1>
+    </div>
+  </div>
+
+  <main class="bg-orcamento">
+    <div class="grid-form-orcamento">
+      <div class="primeiro-formulario-orcamento">
+        <form class="grid-bik-seg" action="">
+          <div class="opcoes-orcamento">
+            <form action="/">
+              <h5 class="text1-xx-menu c6">Bikcraft ou seguro?</h5>
+              <ul class="bikcraft-ou-seg">
+                <li>
+                  <label for="bikcraft-opc">
+                    <input type="radio" name="bikcraft-seg-opc" id="bikcraft-opc">
+                    <p class="c9 text1-xx-menu">Bikcraft</p>
+                  </label>
+                </li>
+
+                <li>
+                  <label for="seg-opc">
+                    <input type="radio" name="bikcraft-seg-opc" id="seg-opc">
+                    <p class="c9 text1-xx-menu ">Seguro</p>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+
+          <div class="opcoes-itens">
+            <h5 class="text1-xx-menu c6">Escolha a sua</h5>
+            <form action="/">
+              <ul class="opcs-biks-segs">
+                <li>
+                  <label for="bikcraft-seg-compras1">
+                    <input type="radio" name="bikcraft-compra" id="bikcraft-seg-compras1">
+                    <p class="c9 text1-xx-menu">Nimbus Stark</p>
+                  </label>
+                </li>
+
+                <li>
+                  <label for="bikcraft-seg-compras2">
+                    <input type="radio" name="bikcraft-compra" id="bikcraft-seg-compras2">
+                    <p class="c9 text1-xx-menu">Nebula Cosmic</p>
+                  </label>
+                </li>
+
+                <li>
+                  <label for="bikcraft-seg-compras3">
+                    <input type="radio" name="bikcraft-compra" id="bikcraft-seg-compras3">
+                    <p class="c9 text1-xx-menu">Magic Might</p>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </form>
+      </div>
+
+      <div class="segundo-formulario-orcamento">
+        <form class="form-dados-pessoais" action="/">
+          <div class="dados-pessoais">
+            <h5 class="text1-xx-menu c13">Dados Pessoais</h5>
+
+            <label class="nome" for="nome">
+              <p class="text1-xx-menu">Nome</p>
+              <input type="text" name="nome" id="nome">
+            </label>
+
+            <label class="s-nome" for="s-nome">
+              <p class="text1-xx-menu">Sobrenome</p>
+              <input type="text" name="s-nome" id="s-nome">
+            </label>
+
+            <label class="cpf" for="cpf">
+              <p class="text1-xx-menu">CPF</p>
+              <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+            </label>
+
+            <label class="email-orcamento" for="email">
+              <p class="text1-xx-menu">E-mail</p>
+              <input type="email" name="email" id="email">
+            </label>
+
+          </div>
+        </form>
+
+        <form class="form-dados-entrega" action="/">
+          <div class="form-entrega">
+            <div class="dados-entrega">
+
+              <h5 class="text1-xx-menu c13">Entrega</h5>
+
+              <label class="cep" for="cep">
+                <p class="text1-xx-menu">CEP</p>
+                <input type="text" name="cep" id="cep">
+              </label>
+
+              <label class="numero" for="numero">
+                <p class="text1-xx-menu">Número</p>
+                <input type="text" name="numero" id="numero">
+              </label>
+
+              <label class="logradouro" for="logradouro">
+                <p class="text1-xx-menu">Logradouro</p>
+                <input type="text" name="logradouro" id="logradouro" placeholder="Rua, avenida... ">
+              </label>
+
+              <label class="bairro" for="bairro">
+                <p class="text1-xx-menu">Bairro</p>
+                <input type="text" name="bairro" id="bairro">
+              </label>
+
+              <label class="cidade" for="cidade">
+                <p class="text1-xx-menu">Cidade</p>
+                <input type="text" name="cidade" id="cidade">
+              </label>
+
+              <label class="estado" for="estado">
+                <p class="text1-xx-menu">Estado</p>
+                <input type="text" name="estado" id="estado" placeholder="Selecione">
+              </label>
+
+            </div>
+
+            <div class="aceitar-termos">
+              <form action="/">
+                <label class="li-aceito-termo" for="aceito-termo">
+                  <input type="checkbox" name="aceito-termo" id="aceito-termo">
+                  <h6 class="text2-x-text">Li e aceito os <strong>termos e condições</strong></h6>
+                </label>
+                <label for="enviar-orcamento">
+                  <input class="botao-enviar" type="button" name="enviar-orcamento" id="enviar-orcamento" value="ENVIAR ORÇAMENTO">
+                </label>
+
+              </form>
+            </div>
+
+        </form>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <footer class=" rodape-grid">
+    <div class="rodape-info">
+      <a class="logo-rodape" href="/index.html"><img src="/img/bikcraft.svg" alt="logo-bikcraft"></a>
+      <h6 class="endereco1 text2-xx c1">ENDEREÇO</h6>
+      <div class="endereco">
+
+        <img src="/img/icones/local.svg" alt="deco">
+        <a class="text2-x c5" href="https://www.google.com.br/maps/place/R.+Leonardo+Commar,+3014+-+Pozzobon,+Votuporanga+-+SP,+15503-023/@-20.4005242,-49.9710117,17z/data=!3m1!4b1!4m6!3m5!1s0x94bd5905ec78fcfb:0xd9bb79db15c52011!8m2!3d-20.4005292!4d-49.9684368!16s%2Fg%2F11cscy65dk?entry=ttu">R. Leonardo Commar, 3014 - Pozzobon, Votuporanga - SP, 15503-023</a>
+      </div>
+
+      <h6 class="contato1 text2-xx c1">CONTATO</h6>
+      <div class="contato">
+
+        <ul class="lista-contato">
+          <li><img src="/img/icones/email.svg" alt="deco">
+            <p class="text2-x c5">bikcraft@email.com.br</p>
+          </li>
+          <li><img src="/img/icones/telefone.svg" alt="deco">
+            <p class="text2-x c5">(17) 99999-999</p>
+          </li>
+
+          <li class="redes">
+            <img src="/img/redes/facebook.svg" alt="facebook">
+            <img src="/img/redes/instagram.svg" alt="instagram">
+            <img src="/img/redes/youtube.svg" alt="youtube">
+          </li>
+        </ul>
+      </div>
+
+      <h6 class="info1 text2-xx c1">INFORMAÇÕES</h6>
+      <div class="informaceos">
+        <ul class="lista-informacoes">
+          <li><a class="text2-x c5 link-info" href="/bicicletas/index.html">BICICLETAS</a></li>
+          <li><a class="text2-x c5 link-info" href="/seguros/">SEGUROS</a></li>
+          <li><a class="text2-x c5 link-info" href="/termos-cond/index.html">TERMOS E CONDIÇÕES</a></li>
+        </ul>
+      </div>
+
+      <div class="direitos-bik">
+        <h6 class="text2-xx  c11">2023 BIKCRAFT ©. Alguns direitos reservados</h6>
+        <img class="deco-footer" src="/img/dec/bottom-right.svg" alt="deco">
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

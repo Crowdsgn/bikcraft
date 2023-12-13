@@ -1,0 +1,521 @@
+.grid-tecnologia1 {
+  background: #292929;
+}
+
+.grid-tecnologia2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0px 80px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  position: relative;
+}
+
+.grid-tecnlogia-info {
+  display: grid;
+  gap: 32px;
+}
+
+.grid-tecnlogia-info h3 {
+  grid-column: 1;
+}
+
+.link-modelo {
+  position: relative;
+  grid-column: 1;
+}
+
+.botton-escolha-home::after {
+  content: "";
+  width: 208.05px;
+  height: 3px;
+  position: absolute;
+  background: #ffbb00;
+  left: 0px;
+  top: 36px;
+}
+
+.foto-tecnologia {
+  grid-column: 2;
+  max-width: 90%;
+  display: block;
+  border-radius: 5px;
+  position: absolute;
+  right: 60px;
+  top: 75px;
+}
+
+.grid-vantagens {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #525252;
+  border-radius: 5px;
+  margin-top: 32px;
+}
+
+.vantagens-bikcraft {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #525252;
+  padding: 32px;
+  border-radius: 5px;
+  gap: 16px;
+}
+
+.rastreador1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.rastreador2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.eletrica1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media (max-width: 1200px) {
+  .grid-tecnologia2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0px 80px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    position: relative;
+  }
+
+  .foto-tecnologia {
+    grid-column: 2;
+    max-width: 90%;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    right: 60px;
+    top: 95px;
+  }
+
+  .grid-tecnlogia-info p,
+  .grid-tecnlogia-info span {
+    font-size: 1.3rem;
+  }
+
+  .botton-escolha-home {
+    font-size: 1rem;
+  }
+
+  .botton-escolha-home::after {
+    content: "";
+    width: 173.38px;
+    height: 3px;
+    position: absolute;
+    background: #ffbb00;
+    left: 0px;
+    top: 36px;
+  }
+
+  .vantagens-bikcraft {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: #525252;
+    padding: 32px;
+    border-radius: 5px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .rastreador {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .rastreador1 {
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .rastreador2 {
+    grid-column: 2/-1;
+    grid-row: 2;
+  }
+
+  .eletrica {
+    grid-row: 4;
+  }
+
+  .eletrica1 {
+    grid-column: 2;
+    grid-row: 4;
+    line-height: 1;
+  }
+
+  .eletrica2 {
+    grid-column: 2/-1;
+    grid-row: 5;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid-tecnologia2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 0px 60px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    position: relative;
+  }
+
+  .foto-tecnologia {
+    grid-column: 2;
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 95px;
+  }
+
+  .grid-tecnlogia-info p,
+  .grid-tecnlogia-info span {
+    font-size: 1.3rem;
+  }
+
+  .botton-escolha-home {
+    font-size: 1rem;
+  }
+
+  .botton-escolha-home::after {
+    content: "";
+    width: 173.38px;
+    height: 3px;
+    position: absolute;
+    background: #ffbb00;
+    left: 0px;
+    top: 36px;
+  }
+
+  .vantagens-bikcraft {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: #525252;
+    padding: 32px;
+    border-radius: 5px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .rastreador {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .rastreador1 {
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .rastreador2 {
+    grid-column: 2/-1;
+    grid-row: 2;
+  }
+
+  .eletrica {
+    grid-row: 4;
+  }
+
+  .eletrica1 {
+    grid-column: 2;
+    grid-row: 4;
+    line-height: 1;
+  }
+
+  .eletrica2 {
+    grid-column: 2/-1;
+    grid-row: 5;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-tecnologia2 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 0px 60px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    position: relative;
+    padding: 40px 60px;
+  }
+
+  .foto-tecnologia {
+    visibility: hidden;
+  }
+  .grid-tecnlogia-info {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-tecnlogia-info p,
+  .grid-tecnlogia-info span {
+    font-size: 1.2rem;
+    grid-column: 1/-1;
+  }
+
+  .botton-escolha-home {
+    font-size: 1rem;
+  }
+
+  .botton-escolha-home::after {
+    content: "";
+    width: 173.38px;
+    height: 3px;
+    position: absolute;
+    background: #ffbb00;
+    left: 0px;
+    top: 36px;
+  }
+
+  .vantagens-bikcraft {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    background: #525252;
+    padding: 28px 32px;
+    border-radius: 5px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .grid-vantagens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rastreador {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .rastreador1 {
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .rastreador2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .eletrica {
+    grid-row: 1;
+  }
+
+  .eletrica1 {
+    grid-column: 4;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .eletrica2 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-tecnologia2 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    position: relative;
+    padding: 40px 60px;
+  }
+
+  .grid-tecnlogia-info h3 {
+    grid-column: 1/-1;
+  }
+
+  .foto-tecnologia {
+    visibility: hidden;
+    position: absolute;
+  }
+  .grid-tecnlogia-info {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .grid-tecnlogia-info p,
+  .grid-tecnlogia-info span {
+    font-size: 1.7rem;
+    grid-column: 1/-1;
+  }
+
+  .vantagens-bikcraft {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    background: #525252;
+    padding: 28px 32px;
+    border-radius: 5px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .vantagens-bikcraft h3 {
+    font-size: 1.3rem;
+  }
+
+  .vantagens-bikcraft p {
+    font-size: 1rem;
+  }
+
+  .vantagens-bikcraft img {
+    width: 28px;
+  }
+
+  .grid-vantagens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rastreador {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .rastreador1 {
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .rastreador2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .eletrica {
+    grid-row: 1;
+  }
+
+  .eletrica1 {
+    grid-column: 4;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .eletrica2 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 590px) {
+  .grid-tecnologia2 {
+    max-width: 490px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    position: relative;
+    padding: 36px 24px;
+  }
+
+  .grid-tecnlogia-info h3 {
+    grid-column: 1/-1;
+  }
+
+  .foto-tecnologia {
+    visibility: hidden;
+    position: absolute;
+  }
+  .grid-tecnlogia-info {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    gap: 16px;
+  }
+  .grid-tecnlogia-info p,
+  .grid-tecnlogia-info span {
+    font-size: 1.4rem;
+    grid-column: 1/-1;
+  }
+
+  .vantagens-bikcraft {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    background: #525252;
+    padding: 28px 32px;
+    border-radius: 5px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .vantagens-bikcraft h3 {
+    font-size: 1.8rem;
+  }
+
+  .vantagens-bikcraft p {
+    font-size: 1.3rem;
+    width: 35ch;
+  }
+
+  .vantagens-bikcraft img {
+    width: 28px;
+  }
+
+  .grid-vantagens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rastreador {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .rastreador1 {
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 1;
+  }
+
+  .rastreador2 {
+    grid-column: 1/-2;
+    grid-row: 2;
+    width: 42ch;
+  }
+
+  .eletrica {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 8px;
+  }
+
+  .eletrica1 {
+    grid-column: 2;
+    grid-row: 3;
+    line-height: 1;
+    margin-top: 8px;
+  }
+
+  .eletrica2 {
+    grid-column: 1/-1;
+    grid-row: 4;
+  }
+  .botton-escolha-home::after {
+    top: 24px;
+  }
+}
